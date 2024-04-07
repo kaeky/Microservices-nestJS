@@ -1,0 +1,16 @@
+{
+  "name": "micro-users-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["micro-users"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/micro-users-e2e/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

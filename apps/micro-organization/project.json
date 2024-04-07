@@ -1,0 +1,24 @@
+{
+  "name": "micro-organization",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/micro-organization/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "micro-organization:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "micro-organization:build:development"
+        },
+        "production": {
+          "buildTarget": "micro-organization:build:production"
+        }
+      }
+    }
+  }
+}

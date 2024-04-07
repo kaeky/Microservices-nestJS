@@ -1,0 +1,12 @@
+{
+  "root": "apps/micro-auth",
+  "entryFile": "main",
+  "sourceRoot": "apps/micro-auth/src",
+  "compilerOptions": {
+    "tsConfigPath": "apps/micro-auth/tsconfig.app.json",
+    "webpack": true
+  },
+  "projects": {
+
+  }
+}
